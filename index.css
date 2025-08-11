@@ -3,10 +3,10 @@
 }
 
 :root {
-    --primcolor: #7F7FD5;
-    --seccolor:#86A8E7;
-    --accentcolor:#91EAE4;
-    --accent-dark: #5CC7C3;
+    --primcolor: #0f0c29;
+    --seccolor: #302b63;
+    --accentcolor: #24243e;
+    --accent-dark: #1a1a2e;
 }
 
 html, body {
