@@ -76,6 +76,7 @@ html, body {
     padding-right: 4px;
     border-right: 6px solid var(--h1-color);
     animation: blink 1s step-start infinite;
+    white-space: nowrap;
 }
 
 @keyframes blink {
