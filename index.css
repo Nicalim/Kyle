@@ -4,11 +4,17 @@
 
 :root {
     --primcolor: #0f0c29;
+<<<<<<< HEAD
     --seccolor:#302b63;
     --accentcolor:#24243e;
     --accent-dark: #5CC7C3;
     --h1-color: #A8C0FF;  
   --p-color: #B0B8D4;
+=======
+    --seccolor: #302b63;
+    --accentcolor: #24243e;
+    --accent-dark: #1a1a2e;
+>>>>>>> 906f9a288f81b44209eb3d2ab398bae28d51858d
 }
 
 html, body {
