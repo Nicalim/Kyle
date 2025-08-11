@@ -3,10 +3,12 @@
 }
 
 :root {
-    --primcolor: #7F7FD5;
-    --seccolor:#86A8E7;
-    --accentcolor:#91EAE4;
+    --primcolor: #0f0c29;
+    --seccolor:#302b63;
+    --accentcolor:#24243e;
     --accent-dark: #5CC7C3;
+    --h1-color: #A8C0FF;  
+  --p-color: #B0B8D4;
 }
 
 html, body {
@@ -65,14 +67,15 @@ html, body {
     text-shadow: 0 0 10px white;
 }
 
-.right> h1 {
+.right > h1 {
     font-family: sans-serif;
-    color: var(--accentcolor);
+    color: var(--h1-color);
     font-size: 60px;
     padding-right: 4px;
-    border-right: 6px solid var(--accentcolor);
+    border-right: 6px solid var(--h1-color);
     animation: blink 1s step-start infinite;
 }
+
 
 @keyframes blink {
     0%, 50% {
