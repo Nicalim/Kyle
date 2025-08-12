@@ -43,7 +43,7 @@ html, body {
     border-radius: 50%;
     width: 300px;
     height: 300px;
-    border: 5px solid var(--accentcolor);
+    border: 5px solid var(--accent-light);
     animation: glow 4s ease-in-out infinite;
 }
 
@@ -54,10 +54,10 @@ html, body {
 
 @keyframes glow {
     0%, 100% {
-        box-shadow: 0 0 50px var(--accentcolor);
+        box-shadow: 0 0 50px var(--accent-light);
     }
     50% {
-        box-shadow: 0 0 20px var(--accentcolor);
+        box-shadow: 0 0 20px var(--accent-light);
     }
 }
 
@@ -164,7 +164,7 @@ html, body {
     font-size: 15px;
     color: var(--navigation-color);
     cursor: pointer;
-    padding-bottom: 2px ;
+    padding-bottom: 2px;
 }
 
 .navigation li::before {
@@ -185,4 +185,21 @@ html, body {
 .navigation li a {
     text-decoration: none;
     color: inherit;
+}
+
+
+/* About me css */
+
+.abt-container, .contact-container,.mywork-container, .skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(
+      to left,
+      var(--primcolor) 0%,
+      var(--seccolor) 50%,
+      var(--accentcolor) 100%
+    );
 }
