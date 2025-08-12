@@ -10,6 +10,18 @@
     --h1-color: #A8C0FF;
     --p-color: #B0B8D4;
     --navigation-color: #94aff3;
+
+    --light-primcolor: #f0f4ff;       /* Light soft background */
+    --light-seccolor: #dbe3ff;        /* Secondary background */
+    --light-accentcolor: #c1c8ff;     /* Soft accent */
+    --light-accent-light: #3a6ff7;    /* Bright teal/blue accent */
+    --light-h1-color: #243b6b;        /* Dark heading */
+    --light-p-color: #4a5678;         /* Darker paragraph */
+    --light-navigation-color: #2a4bb5; /* Navigation links */
+
+    /*light mode color for keyframe*/
+    --accent-light-glow-bg: #5CC7C3;
+    --h1-color-blink: #A8C0FF;
 }
 
 html, body {
@@ -43,7 +55,7 @@ html, body {
     border-radius: 50%;
     width: 300px;
     height: 300px;
-    border: 5px solid var(--accent-light);
+    border: 5px solid var(--accent-light-glow-bg);
     animation: glow 4s ease-in-out infinite;
 }
 
@@ -54,10 +66,10 @@ html, body {
 
 @keyframes glow {
     0%, 100% {
-        box-shadow: 0 0 50px var(--accent-light);
+        box-shadow: 0 0 50px var(--accent-light-glow-bg);
     }
     50% {
-        box-shadow: 0 0 20px var(--accent-light);
+        box-shadow: 0 0 20px var(--accent-light-glow-bg);
     }
 }
 
@@ -70,19 +82,19 @@ html, body {
     text-shadow: 0 0 10px rgb(12, 12, 12);
 }
 
-.right > h1 {
+.right > #heading {
     font-family: sans-serif;
-    color: var(--h1-color);
+    color: var(--h1-color-blink);
     font-size: 60px;
     padding-right: 4px;
-    border-right: 6px solid var(--h1-color);
+    border-right: 6px solid var(--h1-color-blink);
     animation: blink 1s step-start infinite;
     white-space: nowrap;
 }
 
 @keyframes blink {
     0%, 50% {
-        border-right-color: var(--h1-color);
+        border-right-color: var(--h1-color-blink);
     }
     50.01%, 100% {
         border-right-color: transparent;
@@ -174,7 +186,7 @@ html, body {
     left: 0;
     width: 0%;
     height: 2px;
-    background-color: var(--accent-light);
+    background-color: var(--navigation-color);
     transition: width 0.3s ease-in-out;
 }
 
@@ -185,6 +197,15 @@ html, body {
 .navigation li a {
     text-decoration: none;
     color: inherit;
+}
+
+.dark-light-mode {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    border: solid 2px var(--navigation-color);
+    border-radius: 37%;
 }
 
 
@@ -202,4 +223,15 @@ html, body {
       var(--seccolor) 50%,
       var(--accentcolor) 100%
     );
+}
+
+@media (max-width: 768px) {
+    .abt-container {
+        background: linear-gradient(
+        to bottom,
+        var(--primcolor) 0%,
+        var(--seccolor) 50%,
+        var(--accentcolor) 100%
+    );
+    }
 }
