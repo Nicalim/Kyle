@@ -30,7 +30,7 @@ text.innerText = text.innerText === "🌚" ? "🌞" : "🌚";
 
 
   darkmode = !darkmode;
-  document.querySelector("bodies").style.background = darkmode ? `linear-gradient(
+  document.querySelector(".container").style.background = darkmode ? `linear-gradient(
       to left,
       var(--primcolor) 0%,
       var(--seccolor) 50%,
