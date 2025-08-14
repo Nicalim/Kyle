@@ -42,6 +42,7 @@ html, body {
       var(--accentcolor) 100%);
     background-repeat: no-repeat;
     background-size: cover;
+    transition: background 5s ease;
 }
 
 .left, .right {
@@ -154,16 +155,6 @@ html, body {
 }
 
 @media (max-width: 768px) {
-    body, html {
-        margin: 0;
-        padding: 0;
-        background: linear-gradient(
-          to bottom,
-          var(--primcolor) 0%,
-          var(--seccolor) 50%,
-          var(--accentcolor) 100%);
-    }
-
 
     .container {
         display: flex;
@@ -171,6 +162,11 @@ html, body {
         justify-content: center;
         text-align: center;
         flex: 1;
+        background: linear-gradient(
+          to bottom,
+          var(--primcolor) 0%,
+          var(--seccolor) 50%,
+          var(--accentcolor) 100%);
     }
 
     .left, .right {
