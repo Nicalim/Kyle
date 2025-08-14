@@ -30,7 +30,7 @@ text.innerText = text.innerText === "🌚" ? "🌞" : "🌚";
 
 
   darkmode = !darkmode;
-  document.querySelector(".container").style.background = darkmode ? `linear-gradient(
+  document.querySelector("bodies").style.background = darkmode ? `linear-gradient(
       to left,
       var(--primcolor) 0%,
       var(--seccolor) 50%,
@@ -67,4 +67,6 @@ text.innerText = text.innerText === "🌚" ? "🌞" : "🌚";
     document.querySelector(".about").style.webkitTextStroke = darkmode ? "0.5px var(--accent-light)" : "0.5px var(--light-accent-light)";
     const list = document.querySelectorAll(".About, .Contact, .Skills, .my-work");
     list.forEach(item => {item.style.color = darkmode ? "var(--navigation-color)" : "var(--light-navigation-color)";})
+    document.querySelector(".dark-light-mode").style.background = darkmode ? "var(--navigation-color)" : "var(--light-navigation-color)";
+    document.querySelector(".dark-light-mode").style.borderColor = darkmode ? "var(--navigation-color)" : "var(--light-navigation-color)";
 }

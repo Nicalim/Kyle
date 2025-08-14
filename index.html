@@ -8,11 +8,13 @@
     <link rel="icon" type="jpg"  href="profile.jpg">
      <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 </head>
-<body>
+<body class="bodies">
     <div class="container">
         <div class="left">
             <div class="bg-profpic">
-                <img class="profilepic" src="profile.jpg" alt="Picture of me">
+                <div class="pfp-container">
+                    <img class="profilepic" src="profile.jpg" alt="Picture of me">
+                </div>
                 <h2 class="name">Kyle L.</h2>
             </div>
         </div>
@@ -20,14 +22,8 @@
             <button class="dark-light-mode" onclick="toggleDarkMode()">🌚</button>
             <h1 id="heading"> </h1>
             <p class="tagline">Front-End Developer </p>
-             <p class="about">I recently started my journey in programming and am fully committed to learning new languages and technologies. I continuously strive to improve my skills and stay updated with industry trends. Eager to take on challenging projects, I look forward to opportunities that will help me grow as a developer</p>
-             <ul class="navigation">
-                <li class="About"><a href="about-me.html">About me</a></li>
-                <li class="Contact"><a href="contact.html">Contact</a></li>
-                <li class="Skills"><a href="skills.html">Skills</a></li>
-                <li class="my-work"><a href="mywork.html">My works</a></li>
-             </ul>
-        </div>
+            <div class="about-container">
+                <p class="about">I recently started my journey in programming and am fully committed to learning new languages and technologies. I continuously strive to improve my skills and stay updated with industry trends. Eager to take on challenging projects, I look forward to opportunities that will help me grow as a developer</p>
     </div>
     <script src="index.js"></script>
 </body>
