@@ -42,7 +42,6 @@ html, body {
       var(--accentcolor) 100%);
     background-repeat: no-repeat;
     background-size: cover;
-    transition: background 5s ease;
 }
 
 .left, .right {

@@ -35,13 +35,12 @@ const mq = window.matchMedia("(max-width: 768px)");
     mq.addEventListener("change", updateBackground);
   }
 
-
-darkmode = true
-
 function toggleDarkMode() {
 const text = document.querySelector(".dark-light-mode");
 text.innerText = text.innerText === "🌚" ? "🌞" : "🌚";
  darkmode = !darkmode;
+
+ localStorage.setItem("darkmode", darkmode);
 
 	updateBackground();
 
