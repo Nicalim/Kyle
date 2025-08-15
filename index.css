@@ -163,11 +163,13 @@ html, body {
     color: var(--copyright-color);
     text-align: center;
     letter-spacing: 0.5px;
-    border: solid 1px var(--copyright-color);
-    border-radius: 20px;
     display: inline-block;
     padding: 2px 5px;
     opacity: 0.5;
+}
+
+.bi.bi-c-circle{
+    vertical-align: middle;
 }
 
 @media (max-width: 768px) {
