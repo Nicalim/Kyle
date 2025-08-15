@@ -22,6 +22,8 @@
     /*light mode color for keyframe*/
     --accent-light-glow-bg: #5CC7C3;
     --h1-color-blink: #A8C0FF;
+
+    --copyright-color: #888; /* Color for copyright text */
 }
 
 html, body {
@@ -51,6 +53,7 @@ html, body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .pfp-container {
@@ -153,6 +156,19 @@ html, body {
     overflow-wrap: break-word;
 }
 
+.copyright {
+    margin-top: 10px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 14px;
+    color: var(--copyright-color);
+    text-align: center;
+    letter-spacing: 0.5px;
+    border: solid 1px var(--copyright-color);
+    border-radius: 5px;
+    display: inline-block;
+    padding: 2px 5px;
+}
+
 @media (max-width: 768px) {
 
     .container {
@@ -182,8 +198,10 @@ html, body {
     .right > .tagline {
         font-size: 20px;
     }
+    
     .about {
-        font-size: 15px;
+        max-width: 400px;
+
     }
 }
 
